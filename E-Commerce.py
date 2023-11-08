@@ -13,7 +13,7 @@ def create_bycity_df(df):
     
     return bycity_df
 
-all_df = pd.read_csv("E-Commerce_Revenue")
+all_df = pd.read_csv("E-Commerce_Revenue.csv")
 
 def create_rfm_df(df):
     rfm_df = df.groupby(by="customer_city", as_index=False).agg({
