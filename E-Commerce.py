@@ -41,7 +41,7 @@ def create_daily_orders_df(df):
     }, inplace=True)
     
     return daily_orders_df
-datetime_columns = ["order_purchase_timestamp", "order_approved_at", "order_delivered_carrier_date","order_delivered_customer_date","order_estimated_delivery_date",	"order_year",	"order_year_month", "shipping_limit_date"	]
+datetime_columns = ["order_purchase_timestamp", "order_approved_at", "order_delivered_carrier_date","order_delivered_customer_date","order_estimated_delivery_date",	"order_year",	"order_year_month", "shipping_limit_date"]
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
 all_df.reset_index(inplace=True)
  
